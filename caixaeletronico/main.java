@@ -14,7 +14,9 @@ public class main{
         valor = input.nextDouble();
 
         System.out.println("O valor Informado "+valor);
-        
+
+        System.out.println( );
+
 
 
      
