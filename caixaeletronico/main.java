@@ -10,10 +10,7 @@ public class main{
         double valor;
         int tipo;
         int escolha;
-        int notas;
-        int divisao;
         
-       
         real r = new real();
         dolar d = new dolar();
         euro e = new euro();
@@ -22,7 +19,7 @@ public class main{
         valor = input.nextDouble();
 
         System.out.println( );
-        System.out.println("Digite 1 Para Real, Para 2 Dolar, Para 3 Euro");
+        System.out.println("Digite 1 Para Real, 2 para Dolar, 3  para Euro");
         System.out.println( );
         System.out.println("Qual é o tipo da moeda do deposito? ");
         tipo = input.nextInt();
@@ -38,7 +35,7 @@ public class main{
             System.out.println( );
             System.out.println("O valor depositado é U$ "+d.getValordolar()+ " Dolares");
             System.out.println( );
-        }else{
+        }if(tipo == 3){
             e.setValoreuro(valor);
             System.out.println( );
             System.out.println("O valor depositado é € "+e.getValoreuro()+ " Euros");
@@ -54,7 +51,7 @@ public class main{
 
         if(escolha == 1){
             
-            System.out.println("Digite 1 Para Real, Para 2 Dolar, Para 3 Euro");
+            System.out.println("Digite 1 Para Real, 2 para Dolar, 3  para Euro");
             System.out.println( );
             System.out.println("Escolha a moéda do saque ");
             tipo = input.nextInt();
@@ -62,12 +59,18 @@ public class main{
             
             if(tipo == 1){
                 r.getValorreal();
-                divisao = (int) r.getValorreal();
+                r.sacarreal();
+                
+
+
+                
             }
+
             if(tipo == 2){
                 d.getValordolar();
             
-            }else{
+            }
+            else{
                 e.getValoreuro();
                 
             }
