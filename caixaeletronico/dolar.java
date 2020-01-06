@@ -11,7 +11,7 @@ public class dolar{
     public dolar(double valordolar) {
         this.valordolar = valordolar;
     }
-   
+
     public double getValordolar() {
         return valordolar;
     }
