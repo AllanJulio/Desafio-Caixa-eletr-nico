@@ -26,6 +26,8 @@ public class real{
         
         System.out.println(notas);
         
-    }
+    } 
 
 }
+
+//alan é um amigo gente boa
